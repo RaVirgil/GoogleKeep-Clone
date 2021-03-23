@@ -1,0 +1,36 @@
+{
+  "notes": [
+    {
+      "title": "TODO",
+      "text": "Don't forget to hack NASA",
+      "image": "./placeholder.png",
+      "backgroundColor": "#d7288e",
+      "textColor": "white",
+      "id": 1
+    },
+    {
+      "title": "TODO2",
+      "text": "Don't forget what you need to not forget",
+      "image": "./placeholder.png",
+      "backgroundColor": "#ecdfdf",
+      "textColor": "black",
+      "id": 2
+    },
+    {
+      "title": "TODO3",
+      "text": "sdsdsds",
+      "image": "./placeholder.png",
+      "backgroundColor": "#200909",
+      "textColor": "white",
+      "id": 3
+    },
+    {
+      "title": "asd",
+      "text": "asd",
+      "image": "./placeholder.png",
+      "backgroundColor": "#7f0505",
+      "textColor": "white",
+      "id": 4
+    }
+  ]
+}

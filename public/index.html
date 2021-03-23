@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Keep Clone</title>    
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!--My CSS-->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- JQuery-->
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <!-- MDB -->
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+    ></script>
+    <!-- TinyColor-->
+    <script type="text/javascript" src="tinycolor.js"></script>    
+    <!-- MY SCRIPT-->
+    <script defer type="module" src="./script.js"></script>
+  </head>
+
+  <body>
+    <header class="header-container">      
+      <nav class="header-nav">
+        <h1>Google Keep from AliExpress</h1>
+        <form role="search">        
+            <div class="input-group rounded">
+              <input type="search" id="searchInput" class="form-control rounded" placeholder="Search Note" aria-label="Search"
+                aria-describedby="searchAddon" />
+              <span class="input-group-text border-0" id="searchAddon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>         
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <section class="inputSection" id="inputSection">
+        <form class="inputSectionForm" id="inputSectionForm">
+          <div id="accordion" class="form-outline accordion">
+            <input
+              id="inputNoteTitle"
+              class="form-control"
+              type="text"           
+            />
+            <label class="form-label" for="inputNoteTitle">Title...</label>
+          </div>
+
+          <div class="accordion-panel" id="accordionPanel">
+            <div class="form-outline">
+              <textarea
+                class="form-control"
+                id="inputNoteText"
+                rows="2"
+              ></textarea>
+              <label class="form-label" for="inputNoteText">Take a note...</label>
+            </div>
+    
+            <div class="form-color-picker">
+              <input id="colorPicker" type="color" value="#ffffff" />
+              <label for="colorPicker">Note Color</label>
+            </div>
+
+            <input id="inputNoteImage" type="file" accept="image/*, video/*">
+
+            <button
+              type="button"
+              id="saveNoteButton"
+              class="btn btn-rounded"            
+            >
+              Save
+            </button>
+        </form>
+        </div>     
+      </section>
+
+      <section id="notesContainer"></section>    
+
+      <section
+        class="modal fade"
+        id="noteModal"
+        tabindex="-1"
+        aria-hidden="true"
+        role="dialog"        
+      >
+        <div class="modal-dialog modal-dialog-centered" >
+          <div class="modal-content">         
+            <div class="modal-body">
+              <form>
+                <div class="form-outline">
+                  <input
+                    id="modalInputTitle"
+                    class="form-control"
+                    type="text"                   
+                  />
+                  <label class="form-label" for="modalInputTitle">Title</label>
+                </div>
+
+                <div class="form-outline">
+                  <input
+                    id="modalInputText"
+                    class="form-control"
+                    type="text"                   
+                  />
+                  <label class="form-label" for="modalInputText">Text</label>
+                </div> 
+
+                <div class="form-color-picker">
+                  <input id="colorPickerModal" class="color-picker" type="color"/>
+                  <label for="colorPickerModal">Note Color</label>
+                </div>     
+
+                <button id="updateNoteButton" class="btn btn-primary btn-rounded">Save Changes</button> 
+                <button id="deleteNoteButton" class="btn btn-danger btn-rounded">Delete Note</button>                           
+              </form>
+            </div>          
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">     
+        <ul class="footer-list">
+          <li>            
+            <a href="https://github.com/RaVirgil"> GitHub</a>
+          </li>
+          <li><a href="#">Privacy & Terms</a></li>
+          <li>           
+            <a  href="https://keep.google.com/"> Original Google Keep</a>
+          </li>
+        </ul>      
+    </footer>
+  </body>
+</html>

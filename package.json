@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "googlekeepcopy",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "reload": "^3.1.1",
+    "json-server": "^0.16.3"
+  }
+}

@@ -1,0 +1,124 @@
+:root {
+  --primary: #eae7dc;
+  --secondary: #d8c3a5;
+  --font-color-primary: #e98074;
+  --font-color-secondary: #8e8d8a;
+  --footer-font-color: #e85a4f;
+}
+
+/* Header Section */
+.header-container {
+  height: 10vh;
+  padding: 0.5rem;
+  box-shadow: 3px 4px 20px 1px rgba(204, 204, 204, 0.74);
+  background-color: var(--primary);
+  color: var(--font-color-primary);
+}
+
+.header-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+
+  list-style: none;
+}
+
+.header-nav > form {
+  width: 20%;
+  margin-left: 20%;
+}
+/* Header Section */
+
+/* Note Creation Section */
+.inputSection {
+  display: flex;
+  height: 35vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.inputSectionForm {
+  display: flex;
+  height: 100%;
+  border-radius: 5px;
+  flex-flow: column;
+  padding: 1rem;
+}
+
+.accordion {
+  box-shadow: 1px 1px 15px 2px rgba(204, 204, 204, 0.74);
+}
+
+.accordion-panel {
+  display: none;
+}
+/* Note Creation Section */
+
+/* Notes Listing Section */
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px;
+  align-items: center;
+  justify-items: center;
+  padding: 3rem 5rem;
+  list-style: none;
+}
+
+.notes-list-item {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+/* Notes Listing Section */
+
+/* Note Update Modal Section */
+.modal-body {
+  height: 40vh;
+  background-color: var(--primary);
+  border-radius: 5px;
+}
+
+.modal-body > form {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-flow: column wrap;
+}
+/* Note Update Modal Section */
+
+/* Footer Section */
+.footer-container {
+  height: 7vh;
+  box-shadow: 3px 3px 5px 6px rgba(204, 204, 204, 0.74);
+}
+.footer-list {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  background-color: var(--primary);
+}
+
+.footer-list > li > a {
+  font-size: large;
+  text-decoration: none;
+  color: var(--font-color-secondary);
+}
+/* Footer Section */
+
+/* Shared across sections*/
+.btn {
+  background-color: var(--secondary);
+  color: var(--font-color-secondary);
+}
+
+.form-color-picker {
+  font-size: large;
+}
+/* Shared across sections*/
